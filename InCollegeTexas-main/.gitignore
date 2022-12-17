@@ -1,0 +1,6 @@
+*.pyc
+.idea/
+.pytest_cache/
+source/.pytest_cache
+Configuration.py
+
