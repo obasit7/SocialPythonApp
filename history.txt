@@ -1,0 +1,1343 @@
+*   8678823 (HEAD -> main-Epic10-11/14, origin/main-Epic10-11/14) Merge pull request #139 from sid-ak/fix-duplicate-savedjob
+|\  
+* \   0f6d256 Merge pull request #140 from sid-ak/IN-113-Test-Jobs-API
+|\ \  
+| * | 8b9ff53 IN-113: Added test_SingleJobAppendAPI().
+| * | 4ee4851 IN-113: Added output txt files tests dependant on it can pass.
+| * | 6d81d97 IN-113: Made changes to compare and ignore timestamps when comparing.
+| * | c8da42b IN-113: Added test_JobsInputAPI().
+| * | d07a77d IN-113: Returned false in CheckTitleInFB if no jobs exist.
+|/ /  
+| | * 6db5a9e (refs/stash) On fix-duplicate-savedjob: !!GitHub_Desktop<fix-duplicate-savedjob>
+| |/| 
+| | * 4a4ea44 index on fix-duplicate-savedjob: a5bcdf8 Merge branch 'main-Epic10-11/14' into fix-duplicate-savedjob
+| |/  
+| *   a5bcdf8 (origin/fix-duplicate-savedjob, fix-duplicate-savedjob) Merge branch 'main-Epic10-11/14' into fix-duplicate-savedjob
+| |\  
+| |/  
+|/|   
+* |   01bd587 Merge pull request #138 from sid-ak/Cleanup
+|\ \  
+| * | b2294b8 Ran the AppliedJobsAPI conditionally.
+| * | 377af7f Fixed test_UserAPI() by creating a directory before reading the file in it.
+|/ /  
+| * f5ae5e1 fixes on duplicate function calls and saved jobs bug
+|/  
+* 7c78d09 removed unnecessary comment
+*   9d19d5e Merge pull request #137 from sid-ak/IN-106-Test-Input-Student-Account-API
+|\  
+| *   3434efa Merge branch 'main-Epic10-11/14' into IN-106-Test-Input-Student-Account-API
+| |\  
+| |/  
+|/|   
+* |   fa330c4 Merge pull request #135 from sid-ak/IN-107-TEST-Output-User-Profiles-API
+|\ \  
+| * | 7ffe583 (IN-107-TEST-Output-User-Profiles-API) path fix
+| * | 732f9bb IN 107: added test functionality for User Profile API
+| | *   9b615f6 (IN-106-Test-Input-Student-Account-API) Merge branch 'main-Epic10-11/14' into IN-106-Test-Input-Student-Account-API
+| | |\  
+| |_|/  
+|/| |   
+* | |   9a385e7 Merge pull request #134 from sid-ak/path-fix-for-Mac
+|\ \ \  
+| * \ \   cc43af5 (path-fix-for-Mac) Merge branch 'main-Epic10-11/14' into path-fix-for-Mac
+| |\ \ \  
+| |/ / /  
+|/| | |   
+* | | |   b43978e Merge pull request #136 from sid-ak/Fix/FixCheckInputFile
+|\ \ \ \  
+| |_|/ /  
+|/| | |   
+| * | | 995e4bd fixing check input file mistake
+| | * | d23835d changed the "+" to ",", and removed the slash
+| |/ /  
+|/| |   
+| | * e740607 IN 106: cleaned up the code
+| | * b38c2ef IN-106-added test functionality for userInputAPI
+| |/  
+|/|   
+* | 87cbc00 removed unnecessary comments from the last fix commit
+* |   c12d9f3 Merge branch 'main' into main-Epic10-11/14
+|\ \  
+| |/  
+|/|   
+* |   b5806d5 Merge pull request #130 from sid-ak/IN-86-InputAPIStudentAcc
+|\ \  
+| * \   d575c18 (origin/IN-86-InputAPIStudentAcc) Merge branch 'main-Epic10-11/14' into IN-86-InputAPIStudentAcc
+| |\ \  
+| |/ /  
+|/| |   
+* | |   f51c454 Merge pull request #132 from sid-ak/Fix/CorrectSavJobStatement
+|\ \ \  
+| * | | 28aaa6a fixed not statement in DeleteSavedJobIfDeleted
+|/ / /  
+* | |   2a23103 Merge pull request #131 from sid-ak/Fix/InputFileErrorFix
+|\ \ \  
+| * | | 3f5cde6 fixed error when input APIs ran without input files by only running APIs if input files exist
+|/ / /  
+| * | 08d0d3a made the requested changes
+| * | 3151981 calling UserAPI when tier is updated
+| * | 6796363 pushing input txt files
+| * | 70846df worked on IN-86 (branched out from IN-94 and merged IN-87)
+| | | * d61f2e4 (origin/revert-133-IN-106-TEST-Output-User-API) Revert "In 106 test output user API"
+| | |/  
+| | *   2f1ac1b (origin/main, origin/HEAD, main) Merge pull request #133 from sid-ak/IN-106-TEST-Output-User-API
+| | |\  
+| | | * a4a19a2 (origin/IN-106-TEST-Output-User-API) used path.join instead of concatenating
+| | | * 9f8a795 IN 106: Tested UserAPI functionality
+| |_|/  
+|/| |   
+* | |   43f576a Merge pull request #129 from sid-ak/IN-87/InputJobsAPI
+|\ \ \  
+| * \ \   f0ea5d0 (origin/IN-87/InputJobsAPI) Merge branch 'main-Epic10-11/14' into IN-87/InputJobsAPI
+| |\ \ \  
+| |/ / /  
+|/| | |   
+* | | |   64dac42 Merge pull request #126 from sid-ak/IN-97/SavedJobsOutputAPI
+|\ \ \ \  
+| * \ \ \   00dfbfd (origin/IN-97/SavedJobsOutputAPI) Merge branch 'main-Epic10-11/14' into IN-97/SavedJobsOutputAPI
+| |\ \ \ \  
+| |/ / / /  
+|/| | | |   
+* | | | |   a975505 Merge pull request #128 from sid-ak/IN-94-OutputAPIUsers
+|\ \ \ \ \  
+| * | | | | 002327b (origin/IN-94-OutputAPIUsers) made a change so that now my output files go under the output folder
+| | |_|/ /  
+| |/| | |   
+| * | | | 7aa8614 worked on requested changes
+| * | | | 782c744 removed subscription collection - not needed
+| * | | | 036d963 worked on both IN-90 and IN-94
+|/ / / /  
+| | * | 4ec6a28 IN-87: Input Jobs API
+| | * | d59f7ab (origin/IN-89/JobsOutputAPI) import fix in DelereSavedJob...
+| | * | 93b2878 exception content fix
+| | * | 333b2d4 grammar fix
+| | * | 3387e69 added functionality to remake output files unsaved jobs are deleted
+| | * | 15d97ce added functionality to remake output files when jobs are saved or applied
+| | * | d215b49 added exception for single job add/update
+| | * | b44ef8e syntax error fix
+| | * | 4f81783 added Jobs API output functionality
+| |/ /  
+| * / e2f31b4 IN-97: Saved Jobs API
+|/ /  
+* |   39ce8bf Merge pull request #125 from sid-ak/IN-96/Applied_Jobs_Output_API
+|\ \  
+| * \   ed4220d (origin/IN-96/Applied_Jobs_Output_API) Merge branch 'main-Epic10-11/14' into IN-96/Applied_Jobs_Output_API
+| |\ \  
+| |/ /  
+|/| |   
+* | |   558a0af Merge pull request #124 from sid-ak/apiFileSetup
+|\ \ \  
+| |_|/  
+|/| |   
+| | * d6c2fa9 fixed output for RunOutputApis
+| | * 4073b09 removed circular dependency
+| | * 7942a63 additional structuring
+| | * ed1a089 added job id
+| | * 1036aad safety checks added
+| | * 3a2295e added return type to AppliedJob api
+| | * 7f78058 added output api to main
+| | * b9f5ab9 spelling error fix
+| | * 98bc564 separated get path logic into APIHelpers
+| | * 1d94fd8 implemented output api for applied jobs
+| |/  
+| * f76a5e9 updating file structure for apis
+|/  
+*   05c9c3b Merge pull request #123 from sid-ak/Migration-History
+|\  
+| * b6409ce Migration_11/14/2022
+|/  
+* 9963614 updated history file
+* 364dd6f added burndown chart
+* a687dca adding history txt file
+*   e27bb24 Merge pull request #120 from sid-ak/IN-76-TEST-Notifications-I
+|\  
+| *   7c4f6f3 Merge branch 'main-Epic8-11/7' into IN-76-TEST-Notifications-I
+| |\  
+| |/  
+|/|   
+* |   30e0bab Merge pull request #121 from sid-ak/IN-82-Test-New-User-Notification
+|\ \  
+| * | 6520ac7 changes the error message to more specific description on the users limit
+| * | 573a497 bug fix on the filter of new users
+| * | 7648944 IN 82: minor change
+| * | 2848556 IN 82: Test notification when a new user Signs up
+|/ /  
+| * 5725a06 corrected file import names
+| * 9ee2b1f added assert on the ApplyForJob function call
+| * d6ac4dc created a test method for new jobs notification
+| * e8ebc69 created the 2 tests methods for message and applied job notifications
+|/  
+*   78f1565 Merge pull request #119 from sid-ak/IN-82-TEST-Job-Deleted-Notification
+|\  
+| *   646527d Merge branch 'main-Epic8-11/7' into IN-82-TEST-Job-Deleted-Notification
+| |\  
+| |/  
+|/|   
+* |   805b521 Merge pull request #118 from sid-ak/IN-83-NewUserNotification
+|\ \  
+| * | 9a48404 made the requested change (added "field(default_factory=datetime.now)" to Job.py & AppliedJob.py)
+| * | d5c7a39 reverted back to the previous implementation
+| * | e0fd292 found a better way to implement the feature
+| * | 3e7c3a6 small change regarding the tier selection
+| * | c5311a4 fixed a bug
+| * | 9c8e620 made requested changes
+| * | fa6b25e made changes so that the feature works even in the same session
+| * | 0631437 to show new users who joined the platform
+|/ /  
+* |   0f31162 Merge pull request #117 from sid-ak/IN-84-Notifications-Cleanup
+|\ \  
+| * | ae22581 IN-84: Used the parent notification helper methods.
+| * | ca47fdc IN-84: Collated notifications and decorated.
+|/ /  
+| * 7bf0919 Update testFrontend.py
+| * 08e1812 IN 82: Fixed Error when the user Limit was met
+| * c23b570 IN 62: Added Test functionalities for notifications(Profile and applied Jobs Deleted)
+|/  
+*   6034176 Merge pull request #115 from sid-ak/IN-81-New-Job-Notification
+|\  
+| *   7bf39db Merge branch 'main-Epic8-11/7' into IN-81-New-Job-Notification
+| |\  
+| |/  
+|/|   
+* |   c8a35a7 Merge pull request #116 from sid-ak/IN-80-AppliedJobsNotification
+|\ \  
+| * | d4b36e6 moved appliedjobscount to jobnotifications file
+| * | 72efb65 added message to notify users about #appliedjobs
+* | | ec27271 Merge pull request #114 from sid-ak/IN-75-CheckProfile
+|\| | 
+| * | f88281b created UserNotificationHelpers.py
+| * | aecef32 added a message to remind user to create a profile
+|/ /  
+| *   4677f7c Merge branch 'IN-81-New-Job-Notification' of https://github.com/sid-ak/incollegetexas into IN-81-New-Job-Notification
+| |\  
+| | * a367ff5 IN-81: Return [] if caught exception in GetNewJobs
+| * | dd1110d IN-81: Cleanup - Added types to collection args.
+| |/  
+| * 5b694bb IN-81: Updated the notification to display a different message if only one new job was posted.
+| * 48f4041 IN-81: Used NotifyIfNewJobsPosted in Signin.py and updated the _LastLoginTimestamp for the user after displaying all notifications.
+| * b348ba1 IN-81: Implemented a JobNotificationHelper to notify the user if new jobs have been posted since they last applied.
+| * 85154c2 IN-81: Added a _CreatedTimestamp to the Job model and created a helper to compare to return the latest jobs since a user last logged in.
+| * fb0ef23 IN-81: Added a _LastLoginTimestamp to the User model and created a helper to update it.
+| *   76d0fb7 Merge branch 'main-Epic8-11/7' into IN-81-New-Job-Notification
+| |\  
+| |/  
+|/|   
+* |   7fba0b9 Merge pull request #113 from sid-ak/IN-73-Last-AppliedJob-Notification
+|\ \  
+* \ \   a9b2115 Merge pull request #112 from sid-ak/IN-79-Unread-Messages-Notification
+|\ \ \  
+| * | | 851c62c N-79: Changed the wording of the unread messages notification.
+|/ / /  
+| | * f803711 IN-81: Updated the Job model to only contain the poster id and made supporting changes.
+| | * 794447b IN-79: Cleanup.
+| | * bb5d9a5 IN-79: Collated all JobHelpers.
+| |/  
+| * 86778fa IN-73: Displayed the notification if a user has not applied to any job.
+| * 802c302 IN-73: Cleanup.
+| * 925eaf2 IN-73: Used the new JobNotificationHelper in Signin.py to show the notification once a user signs in.
+| * a1a8436 IN-73: Implemented a JobNotificationHelper that prints a message if the user has not applied to a job over a certain number of days.
+| * c4ee3fd IN-73: Implemented an AppliedJobHelper that gets the last job a user applied to.
+| * ce17ff0 IN-73: Changed the default value for datetime and casted it correctly on deserialization.
+| * c1741d0 IN-73: Added a _CreatedTimestamp attribute to AppliedJob.
+|/  
+*   26bfd63 Merge pull request #111 from sid-ak/Burndown-Charts-Move
+|\  
+| * eed0549 Moved burndown charts to their own folder by epic.
+|/  
+*   862c045 Merge pull request #110 from sid-ak/History-Epic7
+|\  
+| * 91ed9ee re-created history.txt after adding burndown charts
+| * 80e3773 added burndown charts
+* | fe0054f Merge pull request #109 from sid-ak/History-Epic7
+|\| 
+| * e6b5767 added history.txt for epic 7
+|/  
+*   d8db640 Merge pull request #108 from sid-ak/Migration-History
+|\  
+| * 5e74510 Migration_11/6/2022
+|/  
+*   0074ad3 Merge pull request #106 from sid-ak/IN-70-TEST-Messaging
+|\  
+| * 8d0fc24 IN-70: DisplayEveryUser arg fix.
+| *   c83c62b Merge branch 'main-Epic7-10/31' into IN-70-TEST-Messaging
+| |\  
+| |/  
+|/|   
+* |   19aa15e Merge pull request #105 from sid-ak/IN-62-TEST-Display-List
+|\ \  
+| * | 1438e1d IN-62: Assert true on user updates.
+| * | ea316e4 IN-62: test_DisplayListUsers arg fix.
+| * |   47c2fec Merge branch 'main-Epic7-10/31' into IN-62-TEST-Display-List
+| |\ \  
+| |/ /  
+|/| |   
+* | |   ece81fe Merge pull request #107 from sid-ak/IN-69-Reply-Delete-Messages
+|\ \ \  
+| * \ \   de71318 Merge branch 'main-Epic7-10/31' into IN-69-Reply-Delete-Messages
+| |\ \ \  
+| |/ / /  
+|/| | |   
+* | | |   743002e Merge pull request #104 from sid-ak/IN-65/ReceiveSendMessage
+|\ \ \ \  
+| * | | | d42edee additional asserts
+| * | | |   9648e2b Merge remote-tracking branch 'origin/IN-65/ReceiveSendMessage' into IN-65/ReceiveSendMessage
+| |\ \ \ \  
+| | * \ \ \   f43ce45 Merge branch 'main-Epic7-10/31' into IN-65/ReceiveSendMessage
+| | |\ \ \ \  
+| |_|/ / / /  
+|/| | | | |   
+| * | | | | fd248c2 added comments
+| |/ / / /  
+| * | | | 4f1be46 updated test params to delete from right node
+| * | | | 0cbcf7a implemented tests for message sending and receiving. Also changed minor code to account for test user and message collections
+| | * | | f8c4053 IN-69: Added reply/delete under ShowInbox().
+| | * | | aa58404 IN-69: Cleaned up to use the new SendMessage().
+| | * | | a944955 IN-69: Modularized send message functionality.
+| |/ / /  
+|/| | |   
+| | * | 8a14e62 fixes on the tests
+| | * | aa33530 added assertions to delete methods
+| | * | bbbcd82 bug fix on username of test node
+| | | * c93137f fixes on the tests
+| | | * 035bd93 added assertions for delete methods
+| | | * 44eb1bf removing the function call
+| | | * f901a82 minor fix on the user name of test user node
+| | | * 901e9d5 created a test method to test inbox and message
+| | |/  
+| | * 43a7fa7 created 2 test methods in testFrontend
+| |/  
+|/|   
+* |   9aa739d Merge pull request #103 from sid-ak/IN-69-Messaging-Id-Deserialization
+|\ \  
+| |/  
+|/|   
+| * db05bf0 IN-69: Casted int for Message ID on deserialization.
+|/  
+*   dfe352b Merge pull request #102 from sid-ak/IN-68-Display-All-Users
+|\  
+| *   dab2bea Merge branch 'main-Epic7-10/31' into IN-68-Display-All-Users
+| |\  
+| |/  
+|/|   
+* |   597803b Merge pull request #101 from sid-ak/IN-69-Messaging-Notifications
+|\ \  
+| * | d1dd898 IN-69: Used the unread messages notification helpers in signing.
+| * | e5ae515 IN-69: Introduced NotificationHelpers and cleaned up.
+|/ /  
+| * b532976 IN 68: made correction, changes variable name and added comments
+| * a96bd09 IN 68: Show all user can be accessed by all users but only Plus members can sed messages to all members
+| * ff7be9b IN-68: Casted UserTierEnum on deserialization.
+| * 3ec6879 IN 68: Made changes to the if block
+| * 3a48f99 Update DisplayAllUser.py
+| * 0ddf339 Update DisplayAllUser.py
+| * 5b8deb4 IN 68: added an option to show all the user to the Plus member
+|/  
+*   73137c5 Merge pull request #100 from sid-ak/IN-69-Messaging
+|\  
+| * d60e93c IN-69: Casted a string to a bool on deserialization.
+| * 3bea51f IN-69: Added the option to show inbox in the sign in menu.
+| * 2dc667d IN-69: Implemented a message helper to display a message.
+| * 111623c IN-69: Added an action to ShowInbox.
+| * e9e1308 IN-69: Enabled the send a message feature in ShowMyNetwork.
+| * ad0c30e IN-69: Added useful MessageHelpers.
+| * b5c6a36 IN-69: Implemented the Message model.
+* | fbbdb99 Merge pull request #99 from sid-ak/IN-58-User-Tier
+|\| 
+| * 540e4a5 IN-58: Removed unused file.
+| * 8a6bfc3 IN-58: More cleanup.
+| * 8e01997 IN-58: Cleanup.
+| * ed8a325 IN-58: Used the newly implemented methods to set tier preferences to display during sign up and log in.
+| * 50418b6 IN-58: Implemented methods to show and set tier preferences.
+| * 4d8e7c0 IN-58: Introduced a UserTierEnum for the User model.
+|/  
+*   927b475 Merge pull request #98 from sid-ak/Add-API-UI-Definitions
+|\  
+| * 1bf8167 Missed another spot for a type annotation.
+| * 7d5cb14 Added type annotations where missing.
+| * 9be4a7f Described the feature that the UI def is for.
+| * 45877bc Create Epic7 - API Definition.txt
+| * 8c56d44 Create Epic7 - UI Definition.txt
+|/  
+*   24082fe Merge pull request #97 from sid-ak/main
+|\  
+| * e8e8ab2 Merge pull request #91 from sid-ak/IN-52-Filtered-Jobs-Interaction
+|/| 
+| *   376cfb2 Merge branch 'main' into IN-52-Filtered-Jobs-Interaction
+| |\  
+| |/  
+|/|   
+* |   b89b16c Merge pull request #96 from sid-ak/Update-History
+|\ \  
+| * | a085efe History_10/30/2022
+|/ /  
+* |   5ec284d Merge pull request #95 from sid-ak/main-Epic6-10/24/22
+|\ \  
+| | * 30438e7 IN-52: Corrected comment and made the file and class name match.
+| | * caa2ce4 IN-52: Fixed the frontend tests to match the updated output.
+| | *   17d3fd2 Merge branch 'main-Epic6-10/24/22' into IN-52-Filtered-Jobs-Interaction
+| | |\  
+| | |/  
+| |/|   
+| * |   e66b59b Merge pull request #94 from sid-ak/MigrationHistory
+| |\ \  
+| | * | 29ba79a Migration_10/30/2022
+| |/ /  
+| * | 6b88ec7 Revert "Merge pull request #93 from sid-ak/IN-55-Remove-Unnecessary-TestJob-Creation"
+| | *   00a5912 Merge branch 'main-Epic6-10/24/22' into IN-52-Filtered-Jobs-Interaction
+| | |\  
+| | |/  
+| |/|   
+| * |   2dd71c3 Merge pull request #93 from sid-ak/IN-55-Remove-Unnecessary-TestJob-Creation
+| |\ \  
+| | * | a19ca9e IN-55: Removed creating a test job in the frontend because it was not needed and importantly it was self destructing after the test run.
+| |/ /  
+| | *   50739a4 Merge branch 'main-Epic6-10/24/22' into IN-52-Filtered-Jobs-Interaction
+| | |\  
+| | |/  
+| |/|   
+| * |   6fa70d6 Merge pull request #92 from sid-ak/IN-52-Exit-Filter-When-Done
+| |\ \  
+| | * | 85fd16e IN-52: Exit filter after job titles have been displayed.
+| |/ /  
+| | * 641055c IN-52: Modified filter methods to return the filtered list of jobs and moved them into JobsHelpers.
+| | * 560491c IN-52: Implemented a generic display jobs method.
+| |/  
+| *   ece28b0 Merge pull request #90 from sid-ak/IN-55-test_DisplayJobTitle-Fix
+| |\  
+| | * 683ff07 IN-55: Updated test_DisplayJobTitle to work with new changes for unsaving a job.
+| |/  
+| *   4f5e876 Merge pull request #89 from sid-ak/IN-50-IN-57-Feedback-Changes
+| |\  
+| | * 9f79427 None and Empty list checks implemented
+| |/  
+| *   2b62856 Merge pull request #86 from sid-ak/Maintainance
+| |\  
+| | * ccaaef4 Added messaging for incomplete application and re-added none checks.
+| | * d51c444 Revert "IN-51_IN-53: Maintainance - Added None checks where appropriate and cleaned up a little."
+| | *   99166e2 Merge branch 'main-Epic6-10/24/22' into Maintainance
+| | |\  
+| | |/  
+| |/|   
+| * |   0ea8a2a Merge pull request #84 from sid-ak/IN-54-Test-Backend
+| |\ \  
+| | * | 1eda31e IN-54: Removed an unused import and line break.
+| | * |   82a856f Merge branch 'main-Epic6-10/24/22' into IN-54-Test-Backend
+| | |\ \  
+| | |/ /  
+| |/| |   
+| * | |   da6cb96 Merge pull request #83 from sid-ak/IN-50-Delete-Job-Backend
+| |\ \ \  
+| | * | | 8fa85d4 Check on None's - Feedback changes
+| | * | | fb876b9 added some helpful prints
+| | * | | d577ea9 added a new action function to check if any of the saved jobs have been deleted
+| | * | | 3d0e242 fix on the option namings
+| | * | | 6da3ea5 created a new action function UnsaveJob to unsave a job if it is saved by the user
+| | * | |   36885e2 Merge branch 'main-Epic6-10/24/22' into IN-50-Delete-Job-Backend
+| | |\ \ \  
+| | |/ / /  
+| |/| | |   
+| | | * |   297d1bc Merge branch 'main-Epic6-10/24/22' into IN-54-Test-Backend
+| | | |\ \  
+| | |_|/ /  
+| |/| | |   
+| | | * | cf837f3 added required paramateres to AppliedJob()
+| | |/ /  
+| | * | 835f090 added collection arguments and replaced the deletion block
+| | * |   d2665aa Merge branch 'main-Epic6-10/24/22' into IN-50-Delete-Job-Backend
+| | |\ \  
+| | * \ \   0f6d76c Merge branch 'IN-50-Delete-Job-Backend' of https://github.com/sid-ak/InCollegeTexas into IN-50-Delete-Job-Backend
+| | |\ \ \  
+| | | * \ \   8457fa5 Merge branch 'main-Epic6-10/24/22' into IN-50-Delete-Job-Backend
+| | | |\ \ \  
+| | * | | | | 691197a notify function name fix
+| | |/ / / /  
+| | * | | | 1e9bb93 renamed the notify function for more meaningful name
+| | * | | | 5497e53 added the Notify function in Job section
+| | * | | | 027573b created a new action function to notify logged user if the job applied has been deleted, and added 2 more attributes for AppliedJob class to help with identifying the applied jobs that were deleted
+| | | | | *   5a8f60f Merge branch 'main-Epic6-10/24/22' into Maintainance
+| | | | | |\  
+| | |_|_|_|/  
+| |/| | | |   
+| * | | | |   eff6dba Merge pull request #82 from sid-ak/IN-52-Filter-Jobs
+| |\ \ \ \ \  
+| | * \ \ \ \   75e3990 Merge branch 'IN-52-Filter-Jobs' of https://github.com/sid-ak/incollegetexas into IN-52-Filter-Jobs
+| | |\ \ \ \ \  
+| | | * \ \ \ \   cac04f9 Merge branch 'main-Epic6-10/24/22' into IN-52-Filter-Jobs
+| | | |\ \ \ \ \  
+| | |_|/ / / / /  
+| |/| | | | | |   
+| | * | | | | | dbb7a98 IN 50: Removed an unused import
+| | |/ / / / /  
+| | * | | | | a6e4bfd IN 52: cleaned some code in DisplayUnappliedJobs
+| | * | | | |   beb924b Merge branch 'IN-52-Filter-Jobs' of https://github.com/sid-ak/incollegetexas into IN-52-Filter-Jobs
+| | |\ \ \ \ \  
+| | | * \ \ \ \   03d18cc Merge branch 'main-Epic6-10/24/22' into IN-52-Filter-Jobs
+| | | |\ \ \ \ \  
+| | | | | |_|/ /  
+| | | | |/| | |   
+| | | * | | | |   d78dffa Merge branch 'main-Epic6-10/24/22' into IN-52-Filter-Jobs
+| | | |\ \ \ \ \  
+| | | | | |_|/ /  
+| | | | |/| | |   
+| | * | / | | | 90db4e2 In 52: corrected Typos
+| | |/ / / / /  
+| | * | | | | 6f9ae4b IN 52: added all the functionalities to filterJob function. Added GetJobByTitle in job file
+| | | | | | * c4a326e IN-51_IN-53: Maintainance - Added None checks where appropriate and cleaned up a little.
+| | |_|_|_|/  
+| |/| | | |   
+| * | | | |   d28a581 Merge pull request #85 from sid-ak/MigrationHistory
+| |\ \ \ \ \  
+| | |_|_|/ /  
+| |/| | | |   
+| | * | | | dd2a21b Migration_10/29/2022
+| |/ / / /  
+| * | | |   42cd01d Merge pull request #79 from sid-ak/IN-55-2/TestDisplayJobs
+| |\ \ \ \  
+| | * | | | 515b08c IN-55: Added 3 - Delete job option back to the available options to make the frontend tests pass.
+| | * | | |   7e19285 Merge branch 'main-Epic6-10/24/22' into IN-55-2/TestDisplayJobs
+| | |\ \ \ \  
+| | | | |/ /  
+| | | |/| |   
+| | * | | |   68b03f2 Merge branch 'main-Epic6-10/24/22' into IN-55-2/TestDisplayJobs
+| | |\ \ \ \  
+| | * | | | | b367795 fixed front end tests for new changes to main. Also fixed flag code inconsistencies in DisplayJobTitlesHelper and main
+| * | | | | |   f69936d Merge pull request #81 from sid-ak/IN-54-Backend
+| |\ \ \ \ \ \  
+| | |_|_|/ / /  
+| |/| | | | |   
+| | * | | | |   3fa37a8 Merge branch 'main-Epic6-10/24/22' into IN-54-Backend
+| | |\ \ \ \ \  
+| | |/ / / / /  
+| |/| | | | |   
+| * | | | | |   6e7bf0d Merge pull request #77 from sid-ak/IN-53-Save-Jobs
+| |\ \ \ \ \ \  
+| | |_|_|/ / /  
+| |/| | | | |   
+| | | * | | | e2f2c6d fixed the tests + added assert to previous tests
+| | | * | | | 65dd338 IN-50: Fixed typo in DeleteSavedJob.
+| | | * | | | 611f6cf IN-50: Added a helper method to delete a saved job.
+| | | * | | |   90e58e5 Merge branch 'IN-54-Backend' of https://github.com/sid-ak/incollegetexas into IN-54-Backend
+| | | |\ \ \ \  
+| | | | * | | | 732474a corrected test_DeleteJob() and test_SavedJobs()
+| | | | * | | |   1e94862 Merge branch 'IN-54-Backend' of https://github.com/sid-ak/incollegetexas into IN-54-Backend
+| | | | |\ \ \ \  
+| | | | * \ \ \ \   253bec3 Merge branch 'IN-53-Save-Jobs' into IN-54-Backend
+| | | | |\ \ \ \ \  
+| | | |_|/ / / / /  
+| | |/| | | | | |   
+| | * | | | | | | c164d82 fixed the print bug in delete option selection
+| | | |_|_|_|_|/  
+| | |/| | | | |   
+| | | * | | | | f46a8cd IN-50: Null check for applied jobs as well.
+| | | | |/ / /  
+| | | |/| | |   
+| | | * | | | defb21f IN-54: Fixed the check in CreateSavedJob to make sure that the returned list is not None and only then iterate throught the list.
+| | | |/ / /  
+| | | * | | 41c19f7 corrected test_SaveJobs()
+| | | * | | 01d351d added a line to delete the test applied job
+| | | * | | 9966713 made changes according to the new commit in branch IN-53-Save-Job
+| | | * | | c78460e merging
+| | | * | |   a5ecefb Merge branch 'IN-53-Save-Jobs' into IN-54-Backend
+| | | |\ \ \  
+| | | |/ / /  
+| | |/| | |   
+| | * | | | 85044fd added checks on createAppliedJob and CreateSavedJob methods
+| | * | | | f3a2f23 added propagation of exceptions in print statements
+| | * | | | e192be7 added the passing of optional parameters of collection in ApplyForJob and SaveJob methods and all the rest this they call
+| | | |_|/  
+| | |/| |   
+| | * | | c787182 removed unnecessary comma
+| | * | | bec4f25 removed unnecessary comma from User Model
+| | * | | e9b47c0 removed Helper class from AppliedJob and SavedJob classes
+| | * | |   7e9ce86 Merge branch 'main-Epic6-10/24/22' into IN-53-Save-Jobs
+| | |\ \ \  
+| | |/ / /  
+| |/| | |   
+| | | * | 8e5ab03 testing
+| | | * | 71a84c2 called AppliedJob and SavedJob instead of Job
+| | | * |   7384208 Merge branch 'main-Epic6-10/24/22' into IN-54-Backend
+| | | |\ \  
+| | |_|/ /  
+| |/| | |   
+| * | | |   f4f7530 Merge pull request #80 from sid-ak/Maintainance
+| |\ \ \ \  
+| | |_|_|/  
+| |/| | |   
+| | * | | bc61fce Removed unused import to fix an error in DisplayJobTitlesHelper.
+| |/ / /  
+| | | * 654680f added comments
+| | | * f3efd5a added test_SaveJobs()
+| | | *   dee3257 Merge branch 'IN-53-Save-Jobs' into IN-54-Backend
+| | | |\  
+| | | |/  
+| | |/|   
+| | * | 02d79e8 print statement fixes
+| | * | bcd6152 added methods to query all saved/applied jobs for a logged user in AppliedJobHelpers and SavedJobHelpers respectively
+| | * | d51d410 extracted AppliedJobHelpers and SavedJobHelpers into distinct modules
+| | * |   795e72c Merge branch 'IN-53-Save-Jobs' of https://github.com/sid-ak/InCollegeTexas into IN-53-Save-Jobs
+| | |\ \  
+| | | * | 7eff6e1 IN-53: Cleanup.
+| | | * |   c09412f Merge branch 'IN-51-Apply-for-a-Job' into IN-53-Save-Jobs
+| | | |\ \  
+| | | | * \   1f70168 Merge branch 'main-Epic6-10/24/22' into IN-51-Apply-for-a-Job
+| | | | |\ \  
+| | |_|_|/ /  
+| |/| | | |   
+| | | | * | 6a39ac1 removed unnecessary imports
+| | | | * | ccf3528 bug fix: return statement placement correction
+| | * | | | f55095f added specification on the date format for the user
+| | |/ / /  
+| | * | | f9c652c removed unnecessary imports
+| | * | | 98599fb added create saved job id for the id of saved job nodes
+| | * | | 581ea64 created helper methods for saving a job
+| | * | | ad1f61c created a new class for SavedJob's
+| | |/ /  
+| | * | 698b936 final touches on the HelpFindIfApplied method
+| | * | ff0b5e4 bug fix in HelpFindUserPosted method
+| | * | 4b02474 added loggedUser parameter to JobTitleMethods to pass the logged user object
+| | * |   5431134 Merge branch 'main-Epic6-10/24/22' into IN-51-Apply-for-a-Job
+| | |\ \  
+| | * | | e599301 added the AppliedJob class to the function
+| | * | | f0d708b Created a new class to manage AppliedJob entities
+| | * | | 559473d complete collection of information on apply for job function, complete date check function
+| | * | | b726926 added function to validate date
+| | * | | 99474aa initial-setup
+| |/ / /  
+|/| | |   
+| | | * 759b1a2 rectified parameters being sent
+| | | *   856da8d Merge branch 'main-Epic6-10/24/22' into IN-54-Backend
+| | | |\  
+| | |_|/  
+| |/| |   
+| * | |   dbe6360 Merge pull request #78 from sid-ak/IN-55/TestDisplayJobOptions
+| |\ \ \  
+| | * \ \   066cfc2 Merge branch 'main-Epic6-10/24/22' into IN-55/TestDisplayJobOptions
+| | |\ \ \  
+| | |/ / /  
+| |/| | |   
+| * | | |   4d1110e Merge pull request #75 from sid-ak/IN-50-Delete-A-Job
+| |\ \ \ \  
+| | | * \ \   7f65292 Merge branch 'IN-50-Delete-A-Job' into IN-55/TestDisplayJobOptions
+| | | |\ \ \  
+| | | |/ / /  
+| | |/| | |   
+| | * | | | d9b1b4a IN-50: Added optional arg collection to DisplayJobTitle.
+| | * | | | bbf78d4 In 50: Minor bug fixes
+| | * | | | 5c3f22e IN 50: changed the exceptions
+| | * | | | 10ee14a IN 50: changed a variable name form canDeleteJob to loggedUserUsername
+| | * | | | bf4137d In 50: changes the exception blocks to catch the exceptions
+| | * | | | 6594b2e IN 50: passed the username into functions.
+| | * | | | cfbaf05 In 52: raised an exception if the job couldn't be deleted
+| | * | | | 5d6c583 IN 50: Instead passing the loggedUser in each function , I passed a flag
+| | * | | | db50605 IN 50: When a job is selected, the User also gets an option to delete the Job
+| | | |/ /  
+| | |/| |   
+| | | * | e9733df IN-55: PR changes: https://github.com/sid-ak/InCollegeTexas/pull/74
+| | |/ /  
+| |/| |   
+| * | | 0c93280 Revert "Merge pull request #74 from sid-ak/IN-52/TestDisplayJobOptions"
+| * | |   9e6e281 Merge pull request #74 from sid-ak/IN-52/TestDisplayJobOptions
+| |\ \ \  
+| | |/ /  
+| |/| |   
+| | * |   4913e57 Merge branch 'main-Epic6-10/24/22' into IN-52/TestDisplayJobOptions
+| | |\ \  
+| | |/ /  
+| |/| |   
+| | * | 62f2fbb IN-52/TestDisplayJobOptions - !merge Aoun's first!
+| | | * 4df10c2 added tests for delete and apply jobs
+| | |/  
+| |/|   
+| * | b34ad3f Merge pull request #72 from sid-ak/IN-52-Display-Jobs
+| |\| 
+| | *   c5d91df Merge branch 'IN-52-Display-Jobs' of https://github.com/sid-ak/incollegetexas into IN-52-Display-Jobs
+| | |\  
+| | | *   5abaccd Merge branch 'IN-52-Display-Jobs' of https://github.com/sid-ak/incollegetexas into IN-52-Display-Jobs
+| | | |\  
+| | | * \   b49b8eb Merge branch 'main-Epic6-10/24/22' into IN-52-Display-Jobs
+| | | |\ \  
+| | * | | | d68a63a In 52: Deleted DisplayJobTitles and moved it to DisplayJobTitlesHelper. Added comment to all the functions. Changed the name of 2 function. removed the option to delete the job
+| | | |_|/  
+| | |/| |   
+| | * | | ce07d71 IN 52: added a third option of deleting a job when a job title is selected(Amir will work on this function)
+| | * | | bec409c IN 52: changed function names
+| | |/ /  
+| | * | 23727cb Create DisplayJobTitlesHelper.py
+| | * | 4a4ffeb IN-52: Added option 2 in JobIntershipSearch.py file to show  all the job titles stored in the database. DisplayJobTitles.py contanis the option to filter the job and then display all the jobs. JobTitleHelper.py currently helps us in showing all the jobs, when one of the jobs is selected it shows the description of the job to save or to apply
+| |/ /  
+|/| |   
+| * | 54ad368 Migration_10/27/2022
+| * |   df752f9 Merge pull request #73 from sid-ak/Maintenance/UpdateViewProfile
+| |\ \  
+| | * | 7a527b6 Added date ended that was missing in view profile.
+| | * | 25657bc Cleaned up ViewProfile.
+| | * | 65dfd62 Fixed failing backend test test_CreateJob.
+| | * | 9fecb18 Removed the FlattenEducationList method from ProfileHelpers that was no longer needed and fixed a buf where an education would get added to the list on editing a single education in the EditEducation method.
+| | * | 279820a Returned empty lists as default values for for education and experience.
+| | * | 5ef328a Added a method to get user by ID in UserHelpers and added error messaging for the UpdateUser method.
+| | * | 46549c7 Caught exception and included error message for the EditProfile method. Cleaned up as well.
+| | * | 76bf8ec updated view profile to handle empty lists of education and experience.
+| | |/  
+| * |   2ea4811 Merge pull request #71 from sid-ak/IN-48-Increase-Job-Limits
+| |\ \  
+| | |/  
+| |/|   
+| | *   39589ec Merge branch 'main-Epic6-10/24/22' into IN-48-Increase-Job-Limits
+| | |\  
+| | |/  
+| |/|   
+| * | 7c6f9ad Merge pull request #70 from sid-ak/IN-56/FrontEndTestsFix
+|/| | 
+| * | 6460fc3 IN-56: Front End Tests Fix - fixed indentation and spacing
+| * | 65b9e73 IN-56: Front End Tests Fix - fixed all front end test errors
+| * | 1f1c838 IN-56: Front End Tests Fix - fixed test_SearchUserUniversity and test_SearchUsersMajor by creating temp user profiles
+| * | cb36034 IN-56: Front End Tests Fix - fixed test_SearchUserUniversity
+| * | b3d7abe IN-56: Front End Tests Fix - test_GeneralSetting
+| * | 80061e9 IN-56: Front End Tests Fix
+|/ /  
+| * a8b396b IN-48: Increased number of Jobs from 5 to 10
+|/  
+*   24da884 Merge pull request #69 from sid-ak/Update-History
+|\  
+| * b9f257e History_10/23/2022
+* |   158cb94 Merge pull request #68 from sid-ak/MigrationHistory
+|\ \  
+| |/  
+|/|   
+| * bf7fbe0 Migration_10/23/2022
+* |   ef01cb4 Merge pull request #67 from sid-ak/IN-47-Frontend-Testing-Updated
+|\ \  
+| * | b2b6bd6 added title case check
+|/ /  
+* |   e31c9da Merge pull request #64 from sid-ak/IN-44-View-A-Profile
+|\ \  
+| * | 6d66e2c IN-44: Minor fixes to frontend. Tests still failing.
+| * | efb7e42 fix on the print argument issues
+| * | 07094d8 fix on the prints
+| * | 091b872 fix on the argument users: some maybe None value
+| * | 25e03ce refreshed the passed as argument user in the View Profile method
+| * |   0fd781b Merge branch 'main' into IN-44-View-A-Profile
+| |\ \  
+| * | | b966180 - updated ViewProfile to work in showNetwork as well as show my profile. -NOTE: buggy with a new user who doesn't have and Edu or Exp list. handled with try and except
+| * | | 3b7c86a initial set up
+* | | |   07be70f Merge pull request #65 from sid-ak/IN-43-Exp-Limit-Fix-Frontend
+|\ \ \ \  
+| |_|/ /  
+|/| | |   
+| * | | b7b527d IN-43: Updated the exp limit check on the frontend.
+|/ / /  
+* | |   94a6c89 Merge pull request #57 from sid-ak/IN-43-Update-Profile-Experience
+|\ \ \  
+| * | | b22b0cd IN-43: Reverted limit exp check.
+| * | | f18c905 fix on the experience limit check
+| * | | dbf2cdb fix on the experiences limit check
+| * | | 5e060cc IN-43: Update profile exp comments.
+| * | | 86457f8 IN-43: Moved code into ProfileHelpers from UpdateProfile, maintained an exception trace, fixed and simplified logic related adding/editing Educations/Experiences.
+| * | | 0f47662 IN-43: Minor variable rename in Profile.py.
+| * | |   0066441 Merge branch 'main' into IN-43-Update-Profile-Experience
+| |\ \ \  
+| |/ / /  
+|/| | |   
+* | | |   6a8f12d Merge pull request #62 from sid-ak/IN-46-Test-Profile
+|\ \ \ \  
+| * \ \ \   1fed530 Merge branch 'main' into IN-46-Test-Profile
+| |\ \ \ \  
+| |/ / / /  
+|/| | | |   
+* | | | |   86d3e27 Merge pull request #63 from sid-ak/Maintenance/CreateUserFix
+|\ \ \ \ \  
+| * | | | | a99863f fixed user creation by assigning the correct User class values in Signup.py
+|/ / / / /  
+| * | | | e26edf6 IN-46: More cleanup.
+| * | | | ebfdf87 IN-46: Cleanup.
+| * | | | bb1f432 IN-46: Removed an unused import.
+| * | | | e23d24b IN-46: Added a test to verify a user can edit a profile as expected.
+| * | | | ec2df6e IN-46: Somehow this branch got merged and this is to fix that.
+|/ / / /  
+| * | | c82db1d fixed some modularity issues - feedback changes
+| * | | cde9311 added helper functions to edit education and experience objects individually
+| * | | 15d0982 created the helper function to edit individual attributes of education
+| * | | 83df283 some feedback fix changes
+| * | | c69d56a removed unnecessary imports
+| * | | 4e0c692 removed the unnecessary import
+| * | | 8e5b075 fixed the import bug
+| |/ /  
+| * |   ebc415a Merge branch 'main' into IN-43-Update-Profile-Experience
+| |\ \  
+| |/ /  
+|/| |   
+* | |   9404553 Merge pull request #61 from sid-ak/IN-43-Exp-Limit-Changes
+|\ \ \  
+| * | | cd84c90 IN-43: Removed errnoeous changes from a test branch - Part 3: Trilogy Finale.
+| * | | 2aa17f1 IN-43: Removed errnoeous changes from a test branch - Part 2.
+| * | | 87aac75 IN-43: Removed errnoeous changes from a test branch.
+| * | | 4f039ac IN-43: Minor fix in UpdateUser based on latest change.
+| * | | 7f78f6d IN-43: Checked max limit on the profile object instead of user based on @aslamovamir's suggestion.
+| * | | 427ae29 IN-46: Fixed some minor bugs in the profile exp limit check.
+| * | |   143a9b8 Merge branch 'IN-43-Experiences-Limit' into IN-46-Test-Profile
+| |\ \ \  
+| * \ \ \   d59c2ea Merge branch 'IN-43-Experiences-Limit' into IN-46-Test-Profile
+| |\ \ \ \  
+| * | | | | c9e46d4 IN-46: Added a test to verify max profile exp limit.
+| * | | | |   f526126 Merge branch 'IN-43-Experiences-Limit' into IN-46-Test-Profile
+| |\ \ \ \ \  
+| * \ \ \ \ \   288316a Merge branch 'IN-43-Experiences-Limit' into IN-46-Test-Profile
+| |\ \ \ \ \ \  
+| * \ \ \ \ \ \   4919928 Merge branch 'main' into IN-46-Test-Profile
+| |\ \ \ \ \ \ \  
+| * | | | | | | | 8602b61 IN-46: Added a test that ensures the user can create a profile as expected.
+| | | | | | | * | 1e3228c called the isExperienceLimitMet method from ProfileHelpers
+| | | | | | | * |   69413c6 Merge branch 'main' into IN-43-Update-Profile-Experience
+| | | | | | | |\ \  
+| |_|_|_|_|_|_|/ /  
+|/| | | | | | | |   
+* | | | | | | | |   df9890d Merge pull request #60 from sid-ak/IN-43-Experiences-Limit
+|\ \ \ \ \ \ \ \ \  
+| |_|/ / / / / / /  
+|/| | | | | / / /   
+| | |_|_|_|/ / /    
+| |/| | | | | |     
+| * | | | | | | 34c97f2 IN-43: Changed the check if greated that profile experiences limit is being updated instead of equal.
+| | |_|_|/ / /  
+| |/| | | | |   
+| * | | | | | 289f66f IN-43: Fixed the limit checks to look for empty lists and NoneTypes correctly.
+| | |_|/ / /  
+| |/| | | |   
+| * | | | | 3321cde IN-43: Made the exp limit check in the UpdateUser method.
+| | |/ / /  
+| |/| | |   
+| * | | | ce1542f IN-43: Added a check for max profile experiences limit.
+|/ / / /  
+| | * | 854b9a7 added an explicit indication to the user that they can add more than one education and experience
+| | * | 28170fb created 2 functions to help with the printing of education and experience lists
+| | * | 47155bf fix on the ConfirmChanges method call
+| | * | a91a356 more on feedback changes
+| | * | adfc741 more feedback changes
+| | * | 2614537 feddback changes
+| | * |   4d16e48 Merge branch 'main' into IN-43-Update-Profile-Experience
+| | |\ \  
+| |_|/ /  
+|/| | |   
+* | | | fe00105 Merge pull request #58 from sid-ak/IN-42-Profile-Improvements
+|\| | | 
+| * | | 5871cd9 IN-42: Finishing touches to serialize better.
+| * | | fbb87b0 IN-42: Fixed and improved the serialization/derserialization of the Profile entity.
+|/ / /  
+| * | 0a838ab modified the CreateProfile function to update function
+| * | 677d040 completed the creation of a profile
+| * | 2f40bef added the helper method to check if the user already created a profile
+| * | 7f2308b created a create-profile function with the necessary helpers
+|/ /  
+* |   3f12f17 Merge pull request #56 from sid-ak/IN-42-Circ-Dependency-Fix
+|\ \  
+| * | a9d0b8f IN-42: Added the new ProfileHelpers.py file.
+| * | 38f2ebc IN-42: Moved ProfileHelpers to its own file.
+|/ /  
+* |   9edc8a3 Merge pull request #55 from sid-ak/IN-42-User-Profile-Update
+|\ \  
+| * \   bcb70dc Merge branch 'main' into IN-42-User-Profile-Update
+| |\ \  
+| * \ \   a56a5cb Merge branch 'IN-42/ProfileModel' into IN-42-User-Profile-Update
+| |\ \ \  
+| * | | | 67fe2aa IN-42: Implemented a way to safely hydrate a user without breaking if the data model in the DB changes.
+| * | | | 657a0f1 IN-42: Updated code with the new modularized helpers.
+| * | | | 5bcaaea IN-42: Modularized user helpers.
+* | | | |   2e18f51 Merge pull request #53 from sid-ak/IN-42/ProfileModel
+|\ \ \ \ \  
+| | |/ / /  
+| |/| / /   
+| |_|/ /    
+|/| | |     
+| * | | 9dda7eb added GetProfile function that takes User class input and returns it's corresponding DB Profile value. Also added ProfileHelper UpdateProfile that takes username and Profile object to update profile in DB. Added other functions to return class objects of themselves from dictionary that is returned from Firebase response
+| |/ /  
+| * | 9149659 IN-42: Removed the import of User into Profile.
+| * | 1470414 removed UserHelpers
+| * | 2eb163d out of commit captions but its a small change
+| * | 8c6e55e added list name to education and experience
+| * | 024e189 additional details added
+| * | bb5aa4b cleanup
+| * | 78fb25b final Profile class push
+| * | 224b179 added Profile class and useful methods
+* | |   ea2b169 Merge pull request #54 from sid-ak/MigrationHistory
+|\ \ \  
+| |/ /  
+|/| /   
+| |/    
+| * 46a9b23 Migration_10/20/2022
+|/  
+*   bae10bc Merge pull request #52 from sid-ak/Update-History
+|\  
+| * b3dbcc2 Updated history.txt 10/16/2022
+|/  
+*   ec5eb6f Merge pull request #51 from sid-ak/Revert-Print-Changes
+|\  
+| * 242ce75 Reverted another print change to satisfy a frontend test.
+| * 2bba187 Fixed the issue with DisplayImpLinks when a user logs in and logs out and trys to access it.
+| * 89f8c34 Revert "Merge pull request #49 from sid-ak/Display-Format-Fixes"
+|/  
+*   e9885cd Merge pull request #50 from sid-ak/updated-log-history-file
+|\  
+| * e7d86a1 updated the log history file
+|/  
+*   30d2260 Merge pull request #49 from sid-ak/Display-Format-Fixes
+|\  
+| *   1ab17cc Merge branch 'main' into Display-Format-Fixes
+| |\  
+| |/  
+|/|   
+* |   03ffbc1 Merge pull request #48 from sid-ak/IN-34-Test-Friends
+|\ \  
+| * | b89df5e IN-34: Modifed tests to verify mutuality between friends.
+* | | fd7e8f0 added history log
+|/ /  
+* |   1ee4ee6 Merge pull request #43 from sid-ak/IN-34-Test-Friends
+|\ \  
+| * \   2066734 Merge branch 'IN-30/FriendsLogic' into IN-34-Test-Friends
+| |\ \  
+| * | | 5a09e94 IN-34: Added a test to verify that deleting a friend works as expected.
+| * | | 3682fd0 IN-34: Added a test to verify that rejecting a friend request works as expected.
+| * | |   951785c Merge branch 'IN-30/FriendsLogic' into IN-34-Test-Friends
+| |\ \ \  
+| * \ \ \   94ddc3c Merge branch 'IN-30/FriendsLogic' into IN-34-Test-Friends
+| |\ \ \ \  
+| * | | | | 8075aaf IN-34: Fixed a failing register new user test.
+| * | | | |   2be3bb6 Merge branch 'main' into IN-34-Test-Friends
+| |\ \ \ \ \  
+| * | | | | | 4e7f1a8 IN-34: Added a test to verify that the user can accept a friend request as expected.
+| * | | | | | e3aaf43 IN-34: Added a test to verify that sending a friend requests works as expected and ensured that it is considered pending.
+| * | | | | | b59a78c IN-34: Added a test to verify that the user is initialized with an empty dictionary of friends.
+| * | | | | | d446378 IN-34: DRY'd the limit constants.
+| * | | | | |   6b34343 Merge branch 'main' into IN-34-Test-Friends
+| |\ \ \ \ \ \  
+| * | | | | | | 40c12ce IN-34: Separated the test node in the DB that verifies user limit.
+| * | | | | | | 10d7529 IN-34: Deleted all test users after the user limit test run.
+| * | | | | | | 46f767f IN-34: Simplified the user and job limit implementations so they actually work.
+| * | | | | | | e665472 IN-34: Added a test to verify user limit and improved the implementation of the limit check.
+| * | | | | | | ff05acf IN-34: Fixed a failing log in test.
+| | | | | | | * 6916a47 fixed type
+| | | | | | | * b1ca4bd Changed format of all displays and fixed the Logged in User bug
+| | | | | | | * 7ae50a6 printing changes
+| |_|_|_|_|_|/  
+|/| | | | | |   
+* | | | | | |   ad364a0 Merge pull request #47 from sid-ak/IN-35-TEST-Console-Modifications
+|\ \ \ \ \ \ \  
+| * | | | | | | 7d0660a IN-35-TEST-Console-Modifications - change the name of the file shoeMyNetwork due to a typo
+| * | | | | | | 0b63088 IN-35-TEST-Console-Modifications - added all the function in test frontend to tes all the new functionality and their outputs
+* | | | | | | |   344364a Merge pull request #45 from sid-ak/IN-30/FriendsLogic
+|\ \ \ \ \ \ \ \  
+| |/ / / / / / /  
+|/| | | | | | /   
+| | |_|_|_|_|/    
+| |/| | | | |     
+| * | | | | | 9d43d8d fixed print statement
+| | |_|_|_|/  
+| |/| | | |   
+| * | | | |   9253fc3 Merge branch 'IN-30/FriendsLogic' of https://github.com/sid-ak/incollegetexas into IN-30/FriendsLogic
+| |\ \ \ \ \  
+| | * | | | | 33871cc fixed print statement
+| | | |_|_|/  
+| | |/| | |   
+| * | | | |   4cd4c10 Merge branch 'main' into IN-30/FriendsLogic
+| |\ \ \ \ \  
+| |/ / / / /  
+|/| / / / /   
+| |/ / / /    
+* | | | |   9cc5fe0 Merge pull request #44 from sid-ak/MigrationHistory
+|\ \ \ \ \  
+| |_|_|_|/  
+|/| | | |   
+| * | | | b3eabfd Migration_10/15/22_Updated
+|/ / / /  
+* | | |   fa6e832 Merge pull request #40 from sid-ak/IN-32-frontend
+|\ \ \ \  
+| |_|_|/  
+|/| | |   
+| * | | 1c3b596 asked for user's uni & major (Signup.py)
+| * | | a0a8cb7 made the asked changes + debugged some frontened functionalities
+| * | | 55e44e2 added a check for SearchUsers
+| * | |   659c904 Merge branch 'IN-30/FriendsLogic' into IN-32-frontend
+| |\ \ \  
+| * \ \ \   28e68f2 Merge branch 'IN-30/FriendsLogic' into IN-32-frontend
+| |\ \ \ \  
+| * \ \ \ \   90346b9 Merge branch 'IN-30/UpdateUserClass' into IN-32-frontend
+| |\ \ \ \ \  
+| | * | | | | 31c0ce6 updated User class with Major and University
+| * | | | | | 7023229 Merge branch 'IN-30/FriendsLogic' into IN-32-frontend
+| |\| | | | | 
+| * | | | | | 98946e1 reverted a change in SendFriendRequest
+| * | | | | | 6b1e4c9 removed placeholder comments
+| * | | | | | 4f7e0bd added frontend functionality + debugged backend
+| * | | | | |   89d6198 Merge branch 'main' into IN-32-frontend
+| |\ \ \ \ \ \  
+| | | |_|_|_|/  
+| | |/| | | |   
+| * | | | | | a3f7891 rectified mistakes
+| * | | | | |   4a2a331 Merge branch 'main' into IN-32-frontend
+| |\ \ \ \ \ \  
+| * | | | | | | 08aff2f made changes to the options
+| * | | | | | |   e7d7649 Merge branch 'main' into IN-32-frontend
+| |\ \ \ \ \ \ \  
+| * | | | | | | | c1be293 added all the frontend requirements
+* | | | | | | | |   b0494a5 Merge pull request #42 from sid-ak/MigrationHistory
+|\ \ \ \ \ \ \ \ \  
+| |_|_|_|/ / / / /  
+|/| | | | | | | |   
+| * | | | | | | | 27fea65 Migration_10/15/22
+|/ / / / / / / /  
+* | | | | | | |   da1aa2b Merge pull request #38 from sid-ak/IN-30/FriendsLogic
+|\ \ \ \ \ \ \ \  
+| |_|_|/ / / / /  
+|/| | | | | | |   
+* | | | | | | |   b10854e Merge pull request #37 from sid-ak/IN-30/FriendsLogic
+|\ \ \ \ \ \ \ \  
+| |_|_|/ / / / /  
+|/| | | | | | |   
+* | | | | | | |   34479e1 Merge pull request #36 from sid-ak/IN-30/FriendsLogic
+|\ \ \ \ \ \ \ \  
+| |_|_|/ / / / /  
+|/| | | | | | |   
+* | | | | | | |   24f8149 Merge pull request #35 from sid-ak/EPIC4/User_Limit_Increase
+|\ \ \ \ \ \ \ \  
+| * | | | | | | | 573655c changed user limit from 5 to 10
+|/ / / / / / / /  
+| | | | | | | * 726019a updated with major and university model
+| | | | | | | * d0354e3 added checks to see if friends exist in DB. Fixes errors occurred in tests
+| | | | | | |/  
+| | | | | | * e995eed added try and excepts
+| | | | | |/  
+| | | | | * c6f68b2 added try and excepts
+| | | | |/  
+| | | | * 0db13f3 fixed pendingReq function... hopefully
+| | | | * c8d15ad updated get friends function to check if friends
+| | | |/  
+| | | * 0b5aeed get pending requests of a user
+| | |/  
+| | * dc8b123 added return statement in try
+| | * d26f390 removed trailing (unreachable) return statement from DeleteFriend
+| | * 17ea973 changed variable name to avoid errors
+| | * 8bc483e forgot to add 2 way functionality to deleteFriend. Added now
+| | * f0dd35c added additional logic for accepting, rejecting and removing a user from friend list
+| |/  
+| * 14bb1ce added return types
+| * 97e9083 check to see if receiver is present in database for SendFriendRequest
+| * 3e791d7 added functionality for a user to send friend request to another user
+| * fa24f6a updated userToFind to str
+| * 74401b9 1- added Friends attribute to the user class 2- added GetFriends function that returns a list of a users friends the users Username
+|/  
+* 4730408 formatting changes - brought latest created tests to the top
+*   5d05b13 Merge pull request #33 from sid-ak/IN-27-TEST-Useful-Links
+|\  
+| * 040bd53 IN-27-Removed Comments
+| * 0f246b4 IN-27-made changes to the test file according to the standards
+| * 9a0f352 IN-27- Removed loggedUser from DisplayUSefulLinksHelper.py as suggested by Sidharth
+| * 627fb49 IN-27- Added the test cases for the DisplayUsefulLink Functions and made some changes to DisplayUsefulLink.py and DisplayUsefulLinkHelpers.py for easier testing
+* |   3ea8c87 Merge pull request #32 from sid-ak/DisplayImpLinksFix
+|\ \  
+| * | c4deb40 Fixed an incorrect parameter being passed to the DisplayImpLinks method due to recent changes.
+* | |   aefe8c2 Merge pull request #34 from sid-ak/IN-20-useful-links
+|\ \ \  
+| * | | 5cd4c6a Deleted the logout option (from Signin.py)
+| |/ /  
+* / / 2f00ad5 fixed log in test
+|/ /  
+* |   c424c05 Merge pull request #31 from sid-ak/IN-28-TEST-ImportantInCollegeLinks
+|\ \  
+| |/  
+|/|   
+| * befb938 Added Epic description for the tests
+| * 9211e65 Removed the duplicate file
+| * 83f1927 completed the ticket IN-28 with all the tests
+| * 9d10ebb initial set up
+* |   e11065b Merge pull request #30 from sid-ak/IN-20-useful-links
+|\ \  
+| |/  
+|/|   
+| * af2a4a9 changed function names for better understanding
+|/  
+*   c2847f5 Merge pull request #29 from sid-ak/IN-20-useful-links
+|\  
+| * a2f7d04 addressed the requested changes
+| *   d4a98a3 Merge branch 'main' into IN-20-useful-links
+| |\  
+| |/  
+|/|   
+* |   2c98f2a Merge pull request #28 from sid-ak/IN-24-Important-Links-Extension
+|\ \  
+| * | a76c855 IN-24: Addressed review, fixed copy error.
+| | * eed302a changed name of the help function
+| | * 20643a6 IN-20-modified catch message
+| | *   398e8d3 Merge branch 'IN-24-Important-Links-Extension' into IN-20-useful-links + made necessary changes
+| | |\  
+| | |/  
+| |/|   
+| * | 883201f IN-24: Fixed a minor frontend test.
+| * | 14bd707 IN-24: Implemented the language preference functionality using the LanguageEnum as required.
+| * | a2ae0a3 IN-24: Introduced a LanguageEnum.
+| * | 7c341e2 IN-24: Implemented functionality required to toggle email, sms and advertising preferences for a user.
+| * | 755e60b IN-24: DRY'd by adding a helper method to display options and cleaned up.
+|/ /  
+| * 6d3abea IN-20: added useful & general links functionality
+|/  
+*   5f4180c Merge pull request #27 from sid-ak/IN-21-Important-Links
+|\  
+| * cd1921f IN-21: Introduced the imp links and their content.
+| * e818714 DRY'd the menu option selection and printing the under construction message.
+* |   7e799bc Merge pull request #26 from sid-ak/DeleteTestFrontend
+|\ \  
+| |/  
+|/|   
+| * c3e2b0e Deleted test_JobInternshipSearch
+|/  
+*   ecc07b4 Merge pull request #25 from sid-ak/MigrationHistory
+|\  
+| * 30c9cde Migration_10/05/22
+* |   292cfa3 Merge pull request #24 from sid-ak/MigrationHistory
+|\ \  
+| * | 6bf32c0 Added snapshot for 10/05/22
+| |/  
+* |   c9315da Merge pull request #23 from sid-ak/FixTestFrontend
+|\ \  
+| * | fab6345 Commented out test_JobInternshipSearch
+|/ /  
+* |   015f748 Merge pull request #22 from sid-ak/IN17/JobModelTests
+|\ \  
+| * | eb9c22f 1- added deleteJob feature in JobHelpers 2- added test to check for CreateJobs, JobLimit, GetAllJobs
+* | |   47730df Merge pull request #21 from sid-ak/IN-12-Go-Back
+|\ \ \  
+| |/ /  
+|/| |   
+| * | 3677095 IN-12-Added a feature to go back to the previous options.
+| |/  
+* |   a7e012d Merge pull request #18 from sid-ak/IN-17-Job-Model
+|\ \  
+| |/  
+|/|   
+| *   acf8f80 Merge branch 'main' into IN-17-Job-Model
+| |\  
+| |/  
+|/|   
+* |   4e01be2 Merge pull request #20 from sid-ak/IN-11/TestingUsers
+|\ \  
+| * | aff5625 set userlimit as a constant
+| * | 7cbc962 1- set userID type to str from int 2- modified login test according to new logic 3- Passed collection name to signin functions to enable functionality for both Users and TestUsers DBs
+| * | c755c29 1- added test for RegisterNewUser using existing functions 2- modified User class to support adding users for both Users and TestUsers DBs 3- added a DeleteUserAccount in UserHelpers
+| * | 4d25833 added tests to for checkDBSize and GetAllUsers
+| | * e068b13 IN-17: Removed the reference to an object which was outside its scope.
+| | *   d0055ef Merge branch 'main' into IN-17-Job-Model
+| | |\  
+| |_|/  
+|/| |   
+* | |   47b99eb Merge pull request #19 from sid-ak/MigrationHistory
+|\ \ \  
+| |/ /  
+|/| |   
+| * | ffc45a7 Migration_09/24/22
+|/ /  
+| * d071546 IN-17: Included the optionNo input inside the try block.
+| * fa8cea9 IN-17: Typo.
+| * 7a2923d IN-17: Finished the FindJobInternshipAction to post a job.
+| * 60a3f41 IN-17: Updated the change tracker.
+| * f8c2ced IN-17: Updated gitignore to ignore additional cache files and deleted existing cache.
+| * d2b719c IN-17: Updated gitignore
+| * 15c4ca9 IN-17: Comment change.
+| *   1e3b5ec Merge branch 'main' into IN-17-Job-Model
+| |\  
+| |/  
+|/|   
+* |   a89a2c3 Merge pull request #17 from sid-ak/IN-12-search-user
+|\ \  
+| * | d0955ba Re-added previous commits.
+|/ /  
+* |   2f1d86b Merge pull request #16 from sid-ak/IN-11-BadMergeFix
+|\ \  
+| * | 2c1d9f0 IN-11: Re-added other changes using the GetAllUsers method.
+| * | 6548ef4 IN-11: Re-added the User model.
+|/ /  
+* |   12007e8 Merge pull request #13 from sid-ak/IN-11-User-Model
+|\ \  
+| * \   378c454 Merge branch 'main' into IN-11-User-Model
+| |\ \  
+| |/ /  
+|/| |   
+* | |   05181ec Merge pull request #15 from sid-ak/IN9-Video
+|\ \ \  
+| * | | 6368920 added test for PlayVideo and added new week update comments in test files
+| | * | bac5a61 Revert "Merge branch 'IN-12-search-user' into IN-11-User-Model"
+| | * |   cc7853f Merge branch 'IN-12-search-user' into IN-11-User-Model
+| | |\ \  
+| | | | * 7c35862 IN-17: Introduced a Job model.
+| | | | *   1b958ad Merge branch 'main' into IN-17-Job-Model
+| | | | |\  
+| |_|_|_|/  
+|/| | | |   
+* | | | | a4bbe3a Revert "Merge pull request #14 from sid-ak/IN-12-search-user"
+| | | | * 3346874 Merge branch 'main' into IN-17-Job-Model
+| | | |/| 
+| | |/|/  
+| |_|/|   
+|/| | |   
+* | | |   05413da Merge pull request #14 from sid-ak/IN-12-search-user
+|\ \ \ \  
+| |/ / /  
+|/| | /   
+| | |/    
+| |/|     
+| * | 20b92f9 IN-12: Iplmented authentication beyond search user and tidied up.
+| * | 5c31bb4 IN-12: Added a search user method and cleaned up the main file.
+| * |   cb7eaf7 Merge branch 'IN-11-User-Model' into IN-12-search-user
+| |\ \  
+| * \ \   ce84ea6 Merge remote-tracking branch 'origin/IN-11-User-Model' into IN-12-search-user
+| |\ \ \  
+| * | | | ebd4c09 IN-12: Changed firstname and lastname to firstName and lastName
+| * | | | e7bea36 IN-12: Updated the comment
+| * | | | 47b419e IN-12: added a function to search the user using their first and last name
+| | | | * 9e43766 Merge branch 'main' into IN-11-User-Model
+| | | |/| 
+| |_|_|/  
+|/| | |   
+* | | |   540d9d5 Merge pull request #12 from sid-ak/IN-10-success-story
+|\ \ \ \  
+| |/ / /  
+|/| | |   
+| | | * 73adea1 IN-11: Used the User model in the main file.
+| | | * 5dbec7b Merge branch 'IN-10-success-story' into IN-11-User-Model
+| | |/| 
+| | |/  
+| |/|   
+| * | 56c939e IN-10: made changed the file name LoggedInActions to Actions and added the PlayVideo.py file  to it. Also made changes to the success story
+| * | b6f46fe IN-10: Added Video Option, in the main file and created a function to play the video
+|/ /  
+| * efccef8 IN-11: Took first name and last name as input from the user.
+| * 24faab4 IN-11: Separated user helpers into its own class.
+| * 08f3a50 IN-11: Comments and cleanup.
+| * 5e26f1a IN-11: Added a hashing implementation using the unique username and password of a user so we don't have to store passwords in plain text while also being able to authenticate users.
+| * 6fc377c IN-11: Used the GetAllUsers method where possible.
+| * 2228eb0 IN-11: Typo
+| * 56cd819 IN-11: Removed unused import.
+| * f18b07c IN-11: Removed unused file.
+| * 5287f67 IN-11: More cleanup.
+| * 1b25ff9 IN-11: Cleanup.
+| * 3a3dea3 IN-11: Simplified the code a little.
+| * 3a557ea Removed whitespace.
+| * 2cd00f7 Introduced a User entity and implemented a GetAllUsers method with it.
+|/  
+*   e936c59 Merge pull request #11 from sid-ak/Cleanup
+|\  
+| * e73ec9f Cleanup.
+* | 1f5f965 Merge pull request #10 from sid-ak/Cleanup
+|\| 
+| * 3de5add Updated README to include testing instructions.
+|/  
+*   c509708 Merge pull request #9 from sid-ak/Readme-GettingStarted
+|\  
+| * 255cd47 Added getting started steps
+|/  
+*   652884c Merge pull request #8 from sid-ak/IN-3-tester1
+|\  
+| * c8f5d8c Added comment for frontend tests
+| *   3c2bb6c Merge branch 'main' into IN-3-tester1
+| |\  
+| |/  
+|/|   
+* |   319cc05 Merge pull request #7 from sid-ak/IN-8-test-frontend
+|\ \  
+| * \   962dbfa Merge branch 'main' into IN-8-test-frontend
+| |\ \  
+| |/ /  
+|/| |   
+* | | c6a6307 bug fix: fixed the loop in the learnNewSkill function to allow break out of loop when -1 selected
+| * |   56f8462 Merge branch 'main' into IN-8-test-menu
+| |\ \  
+| |/ /  
+|/| |   
+* | | d8d643c put the connection to db operation block in CheckDBSize in a try block to make it safe
+* | | 01f7b63 fixed the call to CheckDBSize call, was missing parentheses
+| * | 78825e4 Cleanup
+| * | b5dacf3 Minor rename
+| * | 911b1da Renamed test file and reorganized.
+| * | f89ea9f seperating the tests
+| * | 764fd3e created test cases for LearnNewSkills(), JobInternshipSearch(), and FindSomeone(). Also, fixed typo & refactored the skills menu
+| * |   7d53d13 Merge branch 'main' into IN-8-test-menu
+| |\ \  
+| |/ /  
+|/| |   
+* | |   96ecf31 Merge branch 'main' of https://github.com/sid-ak/incollegetexas
+|\ \ \  
+| * \ \   8145ba2 Merge pull request #5 from sid-ak/IN-5-AdditionaOptions
+| |\ \ \  
+| | * | | 74fefa2 finalizing last commit
+| | * | | 5734e9c fixed LearnNewSkills function to keep asking skills
+| * | | |   c0a15ab Merge pull request #4 from sid-ak/IN-3-tester1
+| |\ \ \ \  
+* | | | | | 51bdd17 Create .gitignore
+| | | | * | 281d9b4 testing new code
+| | | | * | 174b803 tests for LearnNEwSkill(), JobInternshipSearch(), and FindSomeone()
+| | | | * |   51f293d Merge branch 'IN-5-AdditionaOptions' into IN-8-test-menu
+| | | | |\ \  
+| | | | |/ /  
+| | | |/| |   
+| | | * | | e487362 PR change request handled
+| | | * | | 14cb82d added addition options for a user that successfully logged in
+| | |/ / /  
+| |/| | |   
+| | | * | 2d340e9 Tests for ShowMessage(), DisplayMenu(), and LearnNewSkill()
+| | | | * 013da71 changed tester 1 file name
+| | | | * 92beac2 added comments for test file last updated
+| | | | * d1ea1dd testfor user log in added
+| | | |/  
+| | |/|   
+| | * | 5ffab0f added test to check success for registering new user
+| | * | 33c617b corrected Amir's file
+| | * | 606333e moved tester 2 file to source main folder
+| | * | 195b0c5 reconfiguring files
+| | * | 01e4f2f made test for checking accouns limit
+| | * |   93cab43 Merge branch 'main' of https://github.com/sid-ak/incollegetexas into IN-3-tester1
+| | |\ \  
+| | |/ /  
+| |/| |   
+| * | | 84d71d6 Update Signup.py
+|/ / /  
+* | | aca94b0 Fixed commits' accidents
+* | |   30310e6 Merge pull request #2 from sid-ak/database-setup
+|\ \ \  
+| * | | 29313c4 resolved change requests from Sid
+| | * |   8d11c6b Merge branch 'database-setup' of https://github.com/sid-ak/incollegetexas into IN-3-tester1
+| | |\ \  
+| | |/ /  
+| |/| |   
+| * | | 2de6e31 Bug fix and Testing Modular Files Added
+| * | | bdafc90 Bug fix in signup
+| * | | 4641ed1 Revert "Revert "set up of login and sign up functions""
+| * | | 909cc7c Revert "set up of login and sign up functions"
+| * | | 8f91562 set up of login and sign up functions
+| * | | 683d40d basic setup of hook to the firebase database
+| | * | 81ee1b6 some unversioned files
+| |/ /  
+|/| |   
+* | |   6303ef4 Merge pull request #3 from sid-ak/tester2
+|\ \ \  
+| | |/  
+| |/|   
+| * | 5a72722 test for validatePassword()
+| * | e6ad202 Revert "test for validatePassword()"
+| * | 5f41d67 test for validatePassword()
+| * | d6905da function to validate the password
+| |/  
+* | b40a5e1 Update Standards.txt
+* | 31bdd70 Update Standards.txt
+|/  
+*   b452288 Merge branch 'main' of https://github.com/sid-ak/incollegetexas
+|\  
+| *   9c1b911 Merge pull request #1 from sid-ak/ReadmeUpdate
+| |\  
+| | * 60b7c2d Update README.md
+* | | 09452fe Moved source code.
+* | | 21fef0f Added standards.
+|/ /  
+* / 81608a0 main file for code
+|/  
+* ab090b1 Delete sample_test.py
+* 1775513 sample commit
+* 880da08 Test commit.
+* 2a56c1f Initial commit
